@@ -77,6 +77,10 @@ img /*imagens carros */{
    justify-content: center;
 }
 
+#alphadiv {
+   background: #465162;
+}
+
 
 .haas {
    width: 300px;
@@ -100,6 +104,13 @@ img /*imagens carros */{
 }
 
 .redbull {
+   width: 300px;
+   height: 200px;
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.alphatauri {
    width: 300px;
    height: 200px;
    border-radius: 8px;
