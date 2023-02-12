@@ -1,6 +1,6 @@
 @font-face {
    font-family: F1;
-   src: url(Fonts/Formula1-Bold.otf) format('opentype');
+   src: url(../Fonts/Formula1-Bold.otf) format('opentype');
 }
 * {
    margin: 0;
@@ -10,7 +10,8 @@
 }
 
 body {
-   background: url(images/vettel.jpeg) center center no-repeat fixed;
+   /* background: url(images/vettel.jpeg) center center no-repeat fixed; */
+   background: #fff;
    background-size: cover;
    height: 100vh;
 }
@@ -37,6 +38,24 @@ body {
    font-size: 70px;
    color: #281596;
    text-transform: uppercase;
+}
+
+.nav {
+   text-transform: uppercase;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.nav > a {
+   text-decoration: none;
+   padding: 3px;
+   background: #fff;
+   color: #281596;
+   border: 1px solid;
+   border-radius: 5px;
+   margin: 3px;
 }
 
 img /*imagens carros */{
