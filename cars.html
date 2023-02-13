@@ -20,58 +20,63 @@
          <a href="#">pilotos</a>
       </nav>
 
-      <div class="teamdiv" id="haasdiv">
+      <div class="carroseldiv" id="haasdiv">
          <div class="nomeequipe">
-            <h2>haas</h2>
+               <h2>haas</h2>
          </div>
-         <div class="haas">
-            <a href="images/haas 4.jpg">
-               <img src="images/haas 4.jpg" alt="haas-lado">
-            </a>
+            <div class="haas mySlides fade">
+                  <img src="images/haas 4.jpg" alt="haas-lado" style="width: 100%;">
+            </div>
+            <div class="haas mySlides fade">
+                  <img src="images/haas 2.jpg" alt="haas-lado">
+            </div>
+            <div class="haas mySlides fade">
+                  <img src="images/haas 3.jpg" alt="haas-lado">
+            </div>
+            <div class="haas mySlides fade">
+                  <img src="images/haas 1.jpg" alt="haas-lado">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
          </div>
-         <div class="haas">
-            <a href="images/haas 2.jpg">
-               <img src="images/haas 2.jpg" alt="haas-lado">
-            </a>
-         </div>
-         <div class="haas">
-            <a href="images/haas 3.jpg">
-               <img src="images/haas 3.jpg" alt="haas-lado">
-            </a>
-         </div>
-         <div class="haas">
-            <a href="images/haas 1.jpg">
-               <img src="images/haas 1.jpg" alt="haas-lado">
-            </a>
+
+         <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
          </div>
       </div>
-
-      <div class="teamdiv" id="williamsdiv">
+<!--
+      <div class="carroseldiv" id="williamsdiv">
          <div class="nomeequipe">
             <h2>williams</h2>
          </div>
-         <div class="williams">
-            <a href="images/williams 3.jpg">
+         <div class="williams mySlides2 fade">
                <img src="images/williams 3.jpg" alt="williams-">
-            </a>
          </div>
-         <div class="williams">
+         <div class="williams mySlides2 fade">
             <a href="images/williams 2.jpg">
                <img src="images/williams 2.jpg" alt="williams-">
             </a>
          </div>
-         <div class="williams">
-            <a href="images/williams 1.jpg">
+         <div class="williams mySlides2 fade">
                <img src="images/williams 1.jpg" alt="williams-">
-            </a>
          </div>
-         <div class="williams">
-            <a href="images/williams 4.jpg">
+         <div class="williams mySlides2 fade">
                <img src="images/williams 4.jpg" alt="williams-">
-            </a>
          </div>
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
 
+      <div style="text-align: center;">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      </div>
+<!--
       <div class="teamdiv" id="alfadiv">
          <div class="nomeequipe">
             <h2>AlfaRomeo</h2>
@@ -97,7 +102,7 @@
             </a>
          </div>
       </div>
-
+<!--
       <div class="teamdiv" id="redbulldiv">
          <div class="nomeequipe">
             <h2>redbull</h2>
@@ -121,7 +126,7 @@
             <a href="">
                <im src="" alt="">
             </a>
-         </div> -->
+         </div> --
       </div>
 
       <div class="teamdiv" id="alphadiv">
@@ -148,7 +153,9 @@
                <img src="images/alphatauri 4.jpeg" alt="alfaromeo-">
             </a>
          </div>
-      </div>
+      </div>-->
    </div>
+
+   <script src="animation.js"></script>
 </body>
 </html>

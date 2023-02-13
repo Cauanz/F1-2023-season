@@ -64,6 +64,18 @@ body {
    flex-wrap: wrap
 }
 
+.calendar-button {
+   text-decoration: none;
+}
+
+.calendar-button:hover {
+   transform: scale(1.01);
+}
+
+.calendar-button:active {
+   transform: scale(1.0);
+}
+
 .track {
    width: 650px;
    height: 70px;
@@ -88,7 +100,7 @@ h2 {
 
 #divImage {
    width: 70px;
-   height: 60px;
+   height: 37px;
 }
 
 img {
