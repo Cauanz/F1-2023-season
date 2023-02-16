@@ -36,6 +36,7 @@ body {
    font-size: 70px;
    color: #FF1801;
    text-transform: uppercase;
+   margin: 0;
 }
 
 .navy {
@@ -60,7 +61,7 @@ body {
    text-decoration: none;
    padding: 3px;
    background: #fff;
-   color: #281596;
+   color: #000000;
    border: 1px solid;
    border-radius: 5px;
    margin: 3px;
@@ -70,7 +71,7 @@ body {
    text-decoration: none;
    padding: 3px;
    background: #fff;
-   color: #281596;
+   color: #000000;
    border: 1px solid;
    border-radius: 5px;
    margin: 3px;
@@ -156,6 +157,7 @@ p {
       border: 1px solid #000;
       width: 100vw;
       text-align: center;
+      margin-bottom: 9px
    }
 
    .pagnav { 
@@ -175,5 +177,30 @@ p {
 
    .show { 
       display: block; 
+   }
+
+   .navy {
+      justify-content: center;
+   }
+   
+   .navy > a {
+      padding: 8px;
+   }
+
+   .navy > a:hover {
+      padding: 8px;
+      background: #fff;
+      color: #000000;
+      margin: 3px;
+   }
+   
+   .navy > a:active {
+      text-decoration: none;
+      padding: 8px;
+      background: #fff;
+      color: #FF1801;
+      border: 1px solid;
+      border-radius: 5px;
+      margin: 3px;
    }
 }

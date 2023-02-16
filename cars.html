@@ -7,9 +7,9 @@
    <title>F1 2023 season</title>
    <link rel="stylesheet" href="estilos/cars-style.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 <body onload="aparece(1)">
    <div class="containerdiv">
@@ -31,22 +31,23 @@
 
       <nav class="pagnav" id="menu">
          <ul>
-            <li><a onclick="aparece(1)" onload="aparece(1)">haas</a></li>
-            <li><a onclick="aparece(2)">williams</a></li>
-            <li><a onclick="aparece(3)">alfaromeo</a></li>
-            <li><a onclick="aparece(4)">alphatauri</a></li>
-            <li><a onclick="aparece(5)">mclaren</a></li>
-            <li><a onclick="aparece(6)">aston-martin</a></li>
-            <li><a onclick="aparece(7)">ferrari</a></li>
-            <li><a onclick="aparece(8)">mercedes</a></li>
-            <li><a onclick="aparece(9)">redbull</a></li>
+            <li><a onclick="aparece(1), fecha(1)" onload="aparece(1)">haas</a></li>
+            <li><a onclick="aparece(2), fecha(2)">williams</a></li>
+            <li><a onclick="aparece(3), fecha(3)">alfaromeo</a></li>
+            <li><a onclick="aparece(4), fecha(4)">alphatauri</a></li>
+            <li><a onclick="aparece(5), fecha(5)">mclaren</a></li>
+            <li><a onclick="aparece(6), fecha(6)">aston-martin</a></li>
+            <li><a onclick="aparece(7), fecha(7)">ferrari</a></li>
+            <li><a onclick="aparece(8), fecha(8)">mercedes</a></li>
+            <li><a onclick="aparece(9), fecha(9)">redbull</a></li>
          </ul>
       </nav>
+
       <a class="mobile-menu" id="open-menu"><p style="margin: 0;">&#8801;</p></a>
 
-      <div class="carrosel1">
+<div class="carrosel1">
 
-   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <div id="myCarousel" class="carousel slide" w data-ride="carousel">
       <!-- Indicadores -->
       <ol class="carousel-indicators">
          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -55,7 +56,7 @@
          <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
 
-      <!-- Divs para os slides -->
+      <!-- Divs dos slides -->
       <div class="carousel-inner">
          <div class="item active">
             <img src="images/haas 1.jpg" alt="HAAS 1">
@@ -87,7 +88,7 @@
    </div>
    </div>
 
-      <div class="carrosel2">
+<div class="carrosel2">
 
    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
       <!-- Indicadores -->
@@ -130,7 +131,7 @@
    </div>
    </div>
 
-      <div class="carrosel3">
+<div class="carrosel3">
 
    <div id="myCarousel3" class="carousel slide" data-ride="carousel">
       <!-- Indicadores -->
@@ -173,7 +174,7 @@
    </div>
    </div>
 
-      <div class="carrosel4">
+<div class="carrosel4">
 
    <div id="myCarousel4" class="carousel slide" data-ride="carousel">
       <!-- Indicadores -->
@@ -216,7 +217,7 @@
    </div>
    </div>
 
-      <div class="carrosel5">
+<div class="carrosel5">
 
          <div id="myCarousel5" class="carousel slide" data-ride="carousel">
             <!-- Indicadores -->
@@ -250,7 +251,7 @@
 
    </div>
 
-      <div class="carrosel6">
+<div class="carrosel6">
 
       <div id="myCarousel6" class="carousel slide" data-ride="carousel">
          <!-- Indicadores -->
@@ -288,7 +289,7 @@
       </div>
    </div>
 
-      <div class="carrosel7">
+<div class="carrosel7">
 
       <div id="myCarousel7" class="carousel slide" data-ride="carousel">
          <!-- Indicadores -->
@@ -326,7 +327,7 @@
       </div>
    </div>
 
-   <div class="carrosel8">
+<div class="carrosel8">
 
       <div id="myCarousel8" class="carousel slide" data-ride="carousel">
          <!-- Indicadores -->
@@ -363,9 +364,9 @@
          </a>
    
       </div>
-      </div>
+   </div>
 
-      <div class="carrosel9">
+<div class="carrosel9">
 
          <div id="myCarousel9" class="carousel slide" data-ride="carousel">
             <!-- Indicadores -->
@@ -394,7 +395,7 @@
             </a> -->
       
          </div>
-         </div>
+   </div>
 
    <script src="animations.js"></script>
 </body>

@@ -93,8 +93,31 @@ function aparece(n){
   }
 }
 
-var menu = document.getElementById('menu');
+function fecha(n) {
+  if( n === 1){
+    menu.classList.toggle('show');
+  } else if (n === 2) {
+    menu.classList.toggle('show');
+  } else if (n === 3) {
+    menu.classList.toggle('show');
+  } else if (n === 4) { 
+    menu.classList.toggle('show');
+  } else if (n === 5) { 
+    menu.classList.toggle('show');
+  } else if (n === 6) { 
+    menu.classList.toggle('show');
+  } else if (n === 7) { 
+    menu.classList.toggle('show');
+  } else if (n === 8) { 
+    menu.classList.toggle('show');
+  } else {
+    menu.classList.toggle('show');
+  }
+}
 
+
+var menu = document.getElementById('menu');
 document.getElementById('open-menu').onclick = function() {
     menu.classList.toggle('show');
 }
+

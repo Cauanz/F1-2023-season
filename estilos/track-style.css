@@ -7,6 +7,7 @@
    padding: 0;
    box-sizing: border-box;
    font-family: 'F1';
+   user-select: none;
 }
 
 body {
@@ -46,7 +47,6 @@ body {
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
-/*    margin-top: -212px; */
 }
 
 .nav > a {
@@ -123,6 +123,37 @@ img {
 
    .track > h2 {
       font-size: 10px;
+   }
+
+   .countryName > p {
+      font-size: 10px;
+   }
+
+   .nav {
+      justify-content: center;
+   }
+   
+   .nav > a {
+      padding: 8px;
+   }
+}
+
+@media only screen and (max-width: 320px) {
+   .track {
+      width: 17.370em;
+      height: 3.200em;
+   }
+
+   .nav {
+      justify-content: center;
+   }
+
+   .titulo h1 {
+      font-size: 60px;
+   }
+
+   .track > h2 {
+      font-size: 8px;
    }
 
    .countryName > p {
