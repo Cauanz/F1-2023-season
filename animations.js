@@ -92,3 +92,9 @@ function aparece(n){
     child[8].style.backgroundColor = "rgb(122, 0, 0)";
   }
 }
+
+var menu = document.getElementById('menu');
+
+document.getElementById('open-menu').onclick = function() {
+    menu.classList.toggle('show');
+}

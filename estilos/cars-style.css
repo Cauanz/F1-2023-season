@@ -78,27 +78,40 @@ body {
 
 .pagnav {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: center;
    background: #FF1801;
+   width: 100vw;
+   max-width: 100%;
+   margin-bottom: 5px;
+   padding: 8px;
 }
 
-.pagnav > a {
+.pagnav a {
    cursor: pointer;
    text-decoration: none;
-   background: FF1801;
+   background: #FF1801;
    color: white;
-   padding: 7px 12px 7px 12px;
-   border-left: 1px solid white;
-   border-right: 1px solid white;
+   padding: 3px 12px 3px 12px;
+   border: 1px solid white;
+/*    border-right: 1px solid white; */
 }
 
-.pagnav > a:hover {
+.pagnav ul li {
+   list-style: none;
+   display: inline-block;
+}
+
+.pagnav ul{
+   margin: 0;
+}
+
+.pagnav a:hover {
    cursor: pointer;
    text-decoration: none;
    color: grey;
 }
 
-.pagnav > a:active {
+.pagnav a:active {
    background: #7a0000;
 }
 
@@ -121,4 +134,46 @@ img /*imagens carros */{
    height: auto;
    padding: 1%;
    flex-wrap: wrap;
+}
+
+
+/* MENU MOBILE*/
+
+.mobile-menu { 
+   display:none; 
+}
+
+p {
+   margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+
+   .mobile-menu { 
+      display: inline-block; 
+      padding: 8px; 
+      background: #ccc; 
+      border: 1px solid #000;
+      width: 100vw;
+      text-align: center;
+   }
+
+   .pagnav { 
+      display: none; 
+   }
+   .pagnav ul { 
+      height: auto;
+   }
+   .pagnav ul li,
+   .pagnav ul li a {
+      float: none; 
+      display: block; 
+   }
+   .pagnav ul li a { 
+      padding: 12px 6px;
+   }
+
+   .show { 
+      display: block; 
+   }
 }
