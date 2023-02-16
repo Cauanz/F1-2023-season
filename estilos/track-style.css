@@ -13,8 +13,7 @@
 body {
    /* background: url(images/vettel.jpeg) center center no-repeat fixed; */
    background: #fff;
-   background-size: cover;
-   height: 100vh;
+   height: 100%;
 }
 
 .container {
