@@ -28,7 +28,6 @@ body {
 .titulo {
    width: 100vw;
    background: #ffffff6b;
-   margin-top: -51px;
 }
 
 .titulo > h1 {
@@ -62,12 +61,14 @@ body {
 
 .track-calendar {
    display: flex;
-   flex-wrap: wrap
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 100%;
 }
 
 .calendar-button {
    text-decoration: none;
-   width: 50%;
+   width: 41.600em;
    height: 4.375em;
 }
 
@@ -112,7 +113,7 @@ img {
 
 @media only screen and (max-width: 480px) {
    .track {
-      width: 11.400em;
+      width: 24.400em;
       height: 3.400em;
    }
 
