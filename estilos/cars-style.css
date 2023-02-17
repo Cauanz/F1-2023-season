@@ -141,6 +141,10 @@ img /*imagens carros */{
 
 /* MENU MOBILE*/
 
+.mobile-pagnav {
+   display: none;
+}
+
 .mobile-menu { 
    display:none; 
 }
@@ -149,7 +153,53 @@ p {
    margin: 0;
 }
 
+
+
 @media only screen and (max-width: 480px) {
+
+   .pagnav {
+      display: none;
+   }
+
+   .mobile-pagnav {
+      display: flex;
+      justify-content: center;
+      background: #FF1801;
+      width: 100vw;
+      max-width: 100%;
+      margin-bottom: 5px;
+      padding: 8px;
+      }
+   
+      .mobile-pagnav a {
+         cursor: pointer;
+         text-decoration: none;
+         background: #FF1801;
+         color: white;
+         padding: 3px 12px 3px 12px;
+         border: 1px solid white;
+         text-transform: uppercase;
+      /*    border-right: 1px solid white; */
+      }
+   
+      .mobile-pagnav ul li {
+         list-style: none;
+         display: inline-block;
+      }
+   
+      .mobile-pagnav ul{
+         margin: 0;
+      }
+   
+      .mobile-pagnav a:hover {
+         cursor: pointer;
+         text-decoration: none;
+         color: grey;
+      }
+   
+      .mobile-pagnav a:active {
+         background: #7a0000;
+      }
 
    .mobile-menu { 
       display: inline-block; 
@@ -161,18 +211,18 @@ p {
       margin-bottom: 9px
    }
 
-   .pagnav { 
+   .mobile-pagnav { 
       display: none; 
    }
-   .pagnav ul { 
+   .mobile-pagnav ul { 
       height: auto;
    }
-   .pagnav ul li,
-   .pagnav ul li a {
+   .mobile-pagnav ul li,
+   .mobile-pagnav ul li a {
       float: none; 
       display: block; 
    }
-   .pagnav ul li a { 
+   .mobile-pagnav ul li a { 
       padding: 12px 6px;
    }
 
