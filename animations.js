@@ -7,6 +7,7 @@ var astonmartin = document.querySelector(".carrosel6");
 var ferrari = document.querySelector(".carrosel7");
 var mercedes = document.querySelector(".carrosel8");
 var redbull = document.querySelector(".carrosel9");
+var alpine = document.querySelector(".carrosel10");
 
 var list = document.querySelector(".pagnav");
 var child = list.querySelectorAll("a");
@@ -24,6 +25,7 @@ function reset() {
   ferrari.style.display = "none";
   mercedes.style.display = "none";
   redbull.style.display = "none";
+  alpine.style.display = "none";
 }
 
 function resetColor(){
@@ -36,6 +38,7 @@ function resetColor(){
   child[6].style.backgroundColor = "rgb(255, 24, 1)";
   child[7].style.backgroundColor = "rgb(255, 24, 1)";
   child[8].style.backgroundColor = "rgb(255, 24, 1)";
+  child[9].style.backgroundColor = "rgb(255, 24, 1)";
 
   mobileChild[0].style.backgroundColor = "rgb(255, 24, 1)";
   mobileChild[1].style.backgroundColor = "rgb(255, 24, 1)";
@@ -46,6 +49,7 @@ function resetColor(){
   mobileChild[6].style.backgroundColor = "rgb(255, 24, 1)";
   mobileChild[7].style.backgroundColor = "rgb(255, 24, 1)";
   mobileChild[8].style.backgroundColor = "rgb(255, 24, 1)";
+  mobileChild[9].style.backgroundColor = "rgb(255, 24, 1)";
 }
 
 function aparece(n){
@@ -105,13 +109,20 @@ function aparece(n){
     resetColor();
     child[7].style.backgroundColor = "rgb(122, 0, 0)";
     mobileChild[7].style.backgroundColor = "rgb(122, 0, 0)";
-  } else {
+  } else if (n === 9) {
     reset();
     redbull.style.display = "block";
 
     resetColor();
     child[8].style.backgroundColor = "rgb(122, 0, 0)";
     mobileChild[8].style.backgroundColor = "rgb(122, 0, 0)";
+  } else {
+    reset();
+    alpine.style.display = "block";
+
+    resetColor();
+    child[9].style.backgroundColor = "rgb(122, 0, 0)";
+    mobileChild[9].style.backgroundColor = "rgb(122, 0, 0)";
   }
 }
 
@@ -126,4 +137,3 @@ function closemenu() {
 };
 var x = window.matchMedia("(max-width: 480px)");
 closemenu();
-
