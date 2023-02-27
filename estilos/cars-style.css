@@ -214,14 +214,17 @@ p {
    .mobile-pagnav { 
       display: none; 
    }
+
    .mobile-pagnav ul { 
       height: auto;
    }
+
    .mobile-pagnav ul li,
    .mobile-pagnav ul li a {
       float: none; 
       display: block; 
    }
+   
    .mobile-pagnav ul li a { 
       padding: 12px 6px;
    }
