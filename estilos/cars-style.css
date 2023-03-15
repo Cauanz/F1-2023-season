@@ -12,10 +12,11 @@
 
 body {
    /* background: url(images/vettel.jpeg) center center no-repeat fixed; */
-   background: #fff;
+   background: #b4b4b4e8 !important;
 }
 
 .containerdiv {
+   display: flex;
    width: 100vw;
    max-width: 100%;
    flex-wrap: wrap;
@@ -27,7 +28,6 @@ body {
 .titulo {
    width: 100vw;
    max-width: 100%;
-   background: #ffffff6b;
 }
 
 .titulo > h1 {
@@ -141,6 +141,14 @@ img /*imagens carros */{
    flex-wrap: wrap;
 }
 
+.carroseldiv {
+   width: 90%;
+   margin: 0 auto;
+}
+
+.containercarrosel {
+   background: #b4b4b4e8;
+}
 
 /* MENU MOBILE*/
 
@@ -162,6 +170,10 @@ p {
 
    .pagnav {
       display: none;
+   }
+
+   img {
+   
    }
 
    .mobile-pagnav {
@@ -259,5 +271,9 @@ p {
       border: 1px solid;
       border-radius: 5px;
       margin: 3px;
+   }
+
+   .carroseldiv {
+      width: 98%;
    }
 }
