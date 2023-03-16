@@ -61,12 +61,16 @@ body {
 
 @media only screen and (max-width: 480px) {
 
+   .titulo > h1 {
+      font-size: 55px;
+   }
+
    .nav {
       justify-content: center;
-      gap: 10px;
+      flex-wrap: wrap;
    }
    
    .nav > a {
-      padding: 8px;
+      padding: 6px;
    }
 }

@@ -150,6 +150,16 @@ img /*imagens carros */{
    background: #b4b4b4e8;
 }
 
+.carrosel {
+   width: 100%;
+   height: 50vw; /* altura como 50% da largura */
+}
+
+.slick-slide img {
+   width: 100%; /* largura como 100% do contêiner */
+   height: auto;
+}
+
 /* MENU MOBILE*/
 
 .mobile-pagnav {
@@ -249,11 +259,11 @@ p {
    }
    
    .navy > a {
-      padding: 8px;
+      padding: 6px;
    }
 
    .navy > a:hover {
-      padding: 8px;
+      padding: 6px;
       background: #fff;
       color: #000000;
       margin: 3px;
@@ -261,7 +271,7 @@ p {
    
    .navy > a:active {
       text-decoration: none;
-      padding: 8px;
+      padding: 6px;
       background: #fff;
       color: #FF1801;
       border: 1px solid;
@@ -269,7 +279,4 @@ p {
       margin: 3px;
    }
 
-   .carroseldiv {
-      width: 98%;
-   }
 }
