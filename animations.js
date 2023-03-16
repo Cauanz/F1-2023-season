@@ -49,6 +49,9 @@ function closemenu() {
 var x = window.matchMedia("(max-width: 480px)");
 closemenu();
 
+$(window).resize(function(){
+  $('.my-slider')[0].slick.refresh();
+});
 
 $(document).ready(function(){
   $('.carrosel').slick({
@@ -66,27 +69,24 @@ $(document).ready(function(){
           breakpoint: 1024,
           settings: {
               slidesToShow: 1,
-              variableWidth: false,
+              arrows: false,
               mobileFirst: true,
-              arrows: false
           }
       },
       {
           breakpoint: 600,
           settings: {
               slidesToShow: 1,
-              variableWidth: false,
+              arrows: false,
               mobileFirst: true,
-              arrows: false
           }
       },
       {
           breakpoint: 480,
           settings: {
               slidesToShow: 1,
-              variableWidth: false,
+              arrows: false,
               mobileFirst: true,
-              arrows: false
           }
       }
   
@@ -94,6 +94,3 @@ $(document).ready(function(){
   });
 });
 
-$(window).resize(function(){
-  $('.my-slider')[0].slick.refresh();
-});
