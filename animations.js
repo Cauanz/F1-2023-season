@@ -59,12 +59,15 @@ $(document).ready(function(){
     slidesToShow: 1,
     centerMode: true,
     variableWidth: true,
+    adaptiveHeight: false,
 
     responsive: [
       {
           breakpoint: 1024,
           settings: {
               slidesToShow: 1,
+              variableWidth: false,
+              mobileFirst: true,
               arrows: false
           }
       },
@@ -72,6 +75,8 @@ $(document).ready(function(){
           breakpoint: 600,
           settings: {
               slidesToShow: 1,
+              variableWidth: false,
+              mobileFirst: true,
               arrows: false
           }
       },
@@ -79,13 +84,16 @@ $(document).ready(function(){
           breakpoint: 480,
           settings: {
               slidesToShow: 1,
+              variableWidth: false,
+              mobileFirst: true,
               arrows: false
           }
       }
   
   ]
   });
-
-
 });
 
+$(window).resize(function(){
+  $('.my-slider')[0].slick.refresh();
+});
