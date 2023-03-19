@@ -130,6 +130,7 @@ img /*imagens carros */{
 .carroseldiv {
    width: 90%;
    margin: 0 auto;
+   display: none;
 }
 
 .containercarrosel {
