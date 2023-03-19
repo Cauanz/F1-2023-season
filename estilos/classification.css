@@ -1,0 +1,212 @@
+@font-face {
+   font-family: F1;
+   src: url(../Fonts/Formula1-Bold.otf) format('opentype');
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'F1';
+   user-select: none;
+}
+
+body {
+   background: #fff;
+   width: 100vw;
+   max-width: 100%;
+   height: 100vh;
+}
+
+.container {
+   width: 100vw;
+   max-width: 100%;
+   height: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   align-content: space-evenly;
+}
+
+.titulo {
+   width: 100vw;
+   background: #ffffff6b;
+}
+
+.titulo > h1 {
+   text-align: center;
+   font-weight: bold;
+   font-size: 70px;
+   color: #FF1801;
+   text-transform: uppercase;
+/*    margin-top: 35px;
+   margin-bottom: 10px; */
+}
+
+.nav {
+   text-transform: uppercase;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 20px 0 10px;
+}
+
+.nav > a {
+   text-decoration: none;
+   padding: 8px;
+   background: #fff;
+   color: #000000;
+   border: 1px solid;
+   border-radius: 5px;
+   margin: 3px;
+}
+
+.containerdiv {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+/* LISTAS */
+
+.menu {
+   text-transform: uppercase;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 20px;
+}
+
+.menu > a {
+   text-decoration: none;
+   padding: 8px;
+   background: #fff;
+   color: #000000;
+   border: 1px solid;
+   border-radius: 5px;
+   margin: 3px;
+}
+
+.menu > a:active {
+   background: #ff0033;
+   color: #fff;
+}
+
+#title {
+   background: #ff0033;
+}
+
+.classificacao {
+border-collapse: collapse;
+width: 100%;
+max-width: 800px;
+margin: 0 auto;
+margin-bottom: 20px;
+}
+
+.equipes {
+   display: none;
+}
+
+.classificacao th, .classificacao td {
+text-align: center;
+padding: 8px;
+}
+
+.classificacao tr:nth-child(even) {
+background-color: #e4e4e4;
+}
+
+.classificacao tr:hover {
+background-color: #ddd;
+}
+
+.card {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 16px;
+margin-bottom: 16px;
+border-radius: 8px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+transform: translateY(-2px);
+}
+
+.card .piloto {
+font-size: 1.2em;
+font-weight: bold;
+}
+
+.card .pontos {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+.card .posicao {
+font-size: 3em;
+color: #cccccc;
+margin-right: 16px;
+}
+
+/* FIM LISTAS */
+
+@media only screen and (max-width: 480px) {
+
+   .titulo > h1 {
+      font-size: 35px;
+   }
+
+   .nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0 10px;
+   }
+   
+   .nav > a {
+      padding: 6px;
+   }
+
+   
+   table, thead, tbody, th, td, tr {
+      display: block;
+   }
+
+   /* Escondendo os cabeçalhos da tabela */
+   /* thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+   } */
+
+   /* Mostrando apenas as células das tabelas */
+   tr {
+      border: 1px solid #ccc;
+   }
+
+   td {
+      /* Ajustando a largura das células */
+      width: 100%;
+      display: block;
+      text-align: right;
+   }
+
+   td:before {
+      /* Adicionando o cabeçalho da tabela antes do conteúdo */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+   }
+}

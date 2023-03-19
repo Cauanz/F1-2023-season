@@ -59,6 +59,11 @@ body {
    margin: 3px;
 }
 
+.nav > a:hover {
+   background: #ff0033;
+   color: #fff;
+}
+
 @media only screen and (max-width: 480px) {
 
    .titulo > h1 {

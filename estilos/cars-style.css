@@ -49,7 +49,7 @@ body {
 
 .navy > a {
    text-decoration: none;
-   padding: 3px;
+   padding: 8px;
    background: #fff;
    color: #000000;
    border: 1px solid;
@@ -58,24 +58,10 @@ body {
 }
 
 .navy > a:hover {
-   text-decoration: none;
-   padding: 3px;
-   background: #fff;
-   color: #000000;
-   border: 1px solid;
-   border-radius: 5px;
-   margin: 3px;
+   background: #ff0033;
+   color: #fff;
 }
 
-.navy > a:active {
-   text-decoration: none;
-   padding: 3px;
-   background: #fff;
-   color: #000000;
-   border: 1px solid;
-   border-radius: 5px;
-   margin: 3px;
-}
 
 .pagnav {
    display: flex;
