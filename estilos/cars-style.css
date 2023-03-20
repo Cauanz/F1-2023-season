@@ -145,6 +145,7 @@ img /*imagens carros */{
 .slick-slide img {
    width: 100%; /* largura como 100% do contêiner */
    height: auto;
+   object-fit: contain;
 }
 
 /* MENU MOBILE*/
