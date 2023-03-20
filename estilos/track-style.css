@@ -95,6 +95,9 @@ body {
    padding: 0.3125em;
 }
 
+.disputada {
+   background: #333333;
+}
 
 h2 {
    text-transform: uppercase;
@@ -106,7 +109,7 @@ h2 {
    font-style: italic;
 }
 
-#divImage {
+.divImage {
    width: 3.5em;
    height: 2.3125em;
 }
@@ -115,6 +118,27 @@ img {
    width: 100%;
    height: 100%;
 }
+
+.winners {
+   background-color: #f0f0f0;
+}
+
+.winners p {
+   color: #333;
+}
+
+.first {
+   background-color: #FFD700;
+}
+
+.second {
+   background-color: #C0C0C0;
+}
+
+.third {
+   background-color: #CD7F32;
+}
+
 
 @media only screen and (max-width: 480px) {
    .track {
