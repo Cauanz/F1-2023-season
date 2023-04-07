@@ -121,6 +121,11 @@ img {
 
 .winners {
    background-color: #f0f0f0;
+   display: none;
+}
+
+.disputadaAparece {
+   display: block;
 }
 
 .winners p {
