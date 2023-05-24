@@ -65,10 +65,13 @@ body {
 }
 
 .track-calendar {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
    width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(12, 70px);
+   justify-content: space-around;
+   justify-items: center;
+   align-content: center;
 }
 
 .calendar-button {
@@ -121,24 +124,143 @@ img {
 
 .winners {
    background-color: #f0f0f0;
+   display: none;
+}
+
+.disputadaAparece {
+   display: block;
 }
 
 .winners p {
    color: #333;
 }
 
+.emergency {
+   background-color: #ff0033;
+   color: #fff !important;
+   font-weight: bold;
+   padding: 9px;
+   z-index: 0;
+}
+
 .first {
    background-color: #FFD700;
+   z-index: 0;
 }
 
 .second {
    background-color: #C0C0C0;
+   z-index: 0;
 }
 
 .third {
    background-color: #CD7F32;
+   z-index: 0;
 }
 
+/* EFFECTS */
+
+.first {
+   background-image: radial-gradient(circle, gold, transparent);
+   position: relative;
+}
+
+.first::after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: radial-gradient(circle, gold, transparent);
+   animation: sprayAnimation 1s infinite;
+}
+
+.second {
+   background-image: radial-gradient(circle, #C0C0C0, transparent);
+   position: relative;
+}
+
+.second::after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: radial-gradient(circle, #C0C0C0, transparent);
+   animation: sprayAnimation 1s infinite;
+}
+
+.third {
+   background-image: radial-gradient(circle, #CD7F32, transparent);
+   position: relative;
+}
+
+.third::after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: radial-gradient(circle, #CD7F32, transparent);
+   animation: sprayAnimation 1s infinite;
+}
+
+.emergency {
+   background-image: radial-gradient(circle, #ff0033, transparent);
+   position: relative;
+}
+
+.emergency::after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: radial-gradient(circle, #ff0033, transparent);
+   animation: sprayAnimation 1s infinite;
+}
+
+@keyframes sprayAnimation {
+   0% {
+      transform: scaleX(1);
+   }
+   50% {
+      transform: scaleX(1.2);
+      opacity: 1;
+   }
+   100% {
+      transform: scaleX(1.3);
+      opacity: 0;
+   }
+}
+
+
+/* @keyframes firstAnimation {
+   0% {
+      transform: scale(1);
+   }
+   50% {
+      transform: scale(1.2);
+      opacity: 0.8;
+   }
+   100% {
+      transform: scale(1.8);
+      opacity: 0;
+   }
+} */
+
+/* EFFECTS */
+
+
+/* RESPONSIVE */
 
 @media only screen and (max-width: 480px) {
    .track {

@@ -98,6 +98,12 @@ body {
    color: #fff;
 }
 
+.title{
+   text-align: center;
+   padding: 5px;
+   background: red;
+}
+
 #title {
    background: #ff0033;
 }
