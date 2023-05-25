@@ -266,10 +266,32 @@ img {
    .track {
       width: 24.400em;
       height: 3.400em;
+      transform: skew(-5deg);
+   }
+
+   .track-calendar {
+      grid-template-columns: 1fr;
+      justify-content: center;
+   }
+
+   .calendar-button {
+      width: 100%;
+   }
+
+   .calendar-button:hover {
+      transform: scale(1);
+   }
+   
+   .calendar-button:active {
+      transform: scale(1);
    }
 
    h2{
       font-size: 13px;
+   }
+
+   .titulo h1 {
+      font-size: 50px;
    }
 
    .track > h2 {
@@ -287,12 +309,29 @@ img {
    .nav > a {
       padding: 8px;
    }
+
+   .winners p {
+      font-size: 12px;
+   }
 }
 
 @media only screen and (max-width: 320px) {
    .track {
-      width: 17.370em;
+      width: 16.370em;
       height: 3.200em;
+      transform: skew(-4deg);
+   }
+
+   .calendar-button {
+      width: 100%;
+   }
+
+   .calendar-button:hover {
+      transform: scale(1);
+   }
+   
+   .calendar-button:active {
+      transform: scale(1);
    }
 
    .nav {
@@ -300,7 +339,7 @@ img {
    }
 
    .titulo h1 {
-      font-size: 60px;
+      font-size: 50px;
    }
 
    .track > h2 {
@@ -309,5 +348,9 @@ img {
 
    .countryName > p {
       font-size: 10px;
+   }
+
+   .winners p {
+      font-size: 12px;
    }
 }
