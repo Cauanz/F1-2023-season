@@ -168,7 +168,108 @@ margin-right: 16px;
 
 /* FIM LISTAS */
 
-@media only screen and (max-width: 480px) {
+/* MEDIA QUERIES */
+
+@media (max-width: 767px){
+
+   tbody {
+      display: none !important;
+   }
+
+   td {
+      display: flex;
+   }
+
+   .mobile__title {
+      padding: 5px;
+      background: #b5b5b5;
+   }
+
+   .titulo > h1 {
+      font-size: 50px;
+   }
+
+   .nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0 10px;
+   }
+   
+   .nav > a {
+      padding: 6px;
+   }
+
+   .containerdiv {
+      flex-direction: column;
+   }
+
+   .card {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .card .posicao {
+      margin-right: 0;
+      margin-bottom: 16px;
+   }
+
+   .card .piloto {
+      margin-bottom: 8px;
+   }
+
+   .card .pontos {
+      margin-bottom: 16px;
+   }
+
+   .classificacao {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+
+   .classificacao th, .classificacao td {
+      text-align: center;
+      padding: 8px;
+   }
+
+   .classificacao tr:nth-child(even) {
+      background-color: #e4e4e4;
+   }
+
+   .classificacao tr:hover {
+      background-color: #ddd;
+   }
+
+   .equipes {
+      display: block;
+   }
+
+   .equipes th, .equipes td {
+      text-align: center;
+      padding: 8px;
+   }
+
+   .equipes tr:nth-child(even) {
+      background-color: #e4e4e4;
+   }
+
+   .equipes tr:hover {
+      background-color: #ddd;
+   }
+
+   .menu {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0 10px;
+   }
+   
+   .menu > a {
+      padding: 6px;
+   }
+}
+
+@media (max-width: 480px) {
 
    .titulo > h1 {
       font-size: 35px;
@@ -189,30 +290,119 @@ margin-right: 16px;
       display: block;
    }
 
-   /* Escondendo os cabeçalhos da tabela */
-   /* thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-   } */
-
-   /* Mostrando apenas as células das tabelas */
    tr {
       border: 1px solid #ccc;
    }
 
    td {
-      /* Ajustando a largura das células */
       width: 100%;
       display: block;
       text-align: right;
    }
 
    td:before {
-      /* Adicionando o cabeçalho da tabela antes do conteúdo */
       content: attr(data-label);
       float: left;
       font-weight: bold;
       text-transform: uppercase;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+
+   tbody {
+      display: none !important;
+   }
+
+   td {
+      display: flex;
+   }
+
+   .mobile__title {
+      padding: 5px;
+      background: #b5b5b5;
+   }
+
+   .titulo > h1 {
+      font-size: 50px;
+   }
+
+   .nav {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0 10px;
+   }
+   
+   .nav > a {
+      padding: 6px;
+   }
+
+   .containerdiv {
+      flex-direction: column;
+   }
+
+   .card {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .card .posicao {
+      margin-right: 0;
+      margin-bottom: 16px;
+   }
+
+   .card .piloto {
+      margin-bottom: 8px;
+   }
+
+   .card .pontos {
+      margin-bottom: 16px;
+   }
+
+   .classificacao {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+
+   .classificacao th, .classificacao td {
+      text-align: center;
+      padding: 8px;
+   }
+
+   .classificacao tr:nth-child(even) {
+      background-color: #e4e4e4;
+   }
+
+   .classificacao tr:hover {
+      background-color: #ddd;
+   }
+
+   .equipes {
+      display: block;
+   }
+
+   .equipes th, .equipes td {
+      text-align: center;
+      padding: 8px;
+   }
+
+   .equipes tr:nth-child(even) {
+      background-color: #e4e4e4;
+   }
+
+   .equipes tr:hover {
+      background-color: #ddd;
+   }
+
+   .menu {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0 10px;
+   }
+   
+   .menu > a {
+      padding: 6px;
    }
 }

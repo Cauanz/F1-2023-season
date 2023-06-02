@@ -7,14 +7,38 @@ fetch(apiUrl)
       const tabela = document.querySelector('.pilotos');
    
       pilotos.forEach(piloto => {
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-         <td>${piloto.position}</td>
-         <td>${piloto.Driver.givenName} ${piloto.Driver.familyName}</td>
-         <td>${piloto.Constructors[0].name}</td>
-         <td>${piloto.points}</td>
-      `;
-      tabela.appendChild(tr);
+
+         const mediaquery = window.matchMedia('(max-width: 468px)');
+         const mediaquery2 = window.matchMedia('(min-width: 468px)');
+         if (mediaquery.matches) {
+            const tr2 = document.createElement('tr');
+            tr2.innerHTML = `
+               <td colspan="4" class="mobile">
+                  <div class="mobile">
+                     <div class="mobile__title">Piloto</div>
+                     <div class="mobile__content">${piloto.Driver.givenName} ${piloto.Driver.familyName}</div>
+                  </div>
+                  <div class="mobile">
+                     <div class="mobile__title">Equipe</div>
+                     <div class="mobile__content">${piloto.Constructors[0].name}</div>
+                  </div>
+                  <div class="mobile">
+                     <div class="mobile__title">Pontos</div>
+                     <div class="mobile__content">${piloto.points}</div>
+                  </div>
+               </td>
+            `;
+            tabela.appendChild(tr2);
+         } else if (mediaquery2.matches) {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+               <td>${piloto.position}</td>
+               <td>${piloto.Driver.givenName} ${piloto.Driver.familyName}</td>
+               <td>${piloto.Constructors[0].name}</td>
+               <td>${piloto.points}</td>
+            `;
+            tabela.appendChild(tr);
+         }
       });
 })
 .catch(error => {

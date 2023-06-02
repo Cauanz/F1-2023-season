@@ -67,7 +67,7 @@ body {
    width: 100%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(12, 70px);
+   grid-template-rows: repeat(12, 80px);
    justify-content: space-around;
    justify-items: center;
    align-content: center;
@@ -248,9 +248,14 @@ img {
 
 @media (max-width: 767px){
 
+   body {
+      min-width: 360px;
+   }
+
    .track-calendar {
       grid-template-columns: 1fr;
       justify-content: center;
+      grid-template-rows: repeat(12, 60px);
    }
 
    .calendar-button {
@@ -289,8 +294,8 @@ img {
       padding: 8px;
    }
 
-   .winners p {
-      font-size: 11px;
+   .winners {
+      display: none !important;
    }
 }
 
