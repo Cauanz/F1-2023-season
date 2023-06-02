@@ -11,7 +11,6 @@
 }
 
 body {
-   /* background: url(images/vettel.jpeg) center center no-repeat fixed; */
    background: #fff;
 }
 
@@ -242,27 +241,108 @@ img {
    }
 }
 
-
-/* @keyframes firstAnimation {
-   0% {
-      transform: scale(1);
-   }
-   50% {
-      transform: scale(1.2);
-      opacity: 0.8;
-   }
-   100% {
-      transform: scale(1.8);
-      opacity: 0;
-   }
-} */
-
 /* EFFECTS */
 
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 767px){
+
+   .track-calendar {
+      grid-template-columns: 1fr;
+      justify-content: center;
+   }
+
+   .calendar-button {
+      width: 100%;
+   }
+
+   .calendar-button:hover {
+      transform: scale(1);
+   }
+   
+   .calendar-button:active {
+      transform: scale(1);
+   }
+
+   h2{
+      font-size: 13px;
+   }
+
+   .titulo h1 {
+      font-size: 50px;
+   }
+
+   .track > h2 {
+      font-size: 10px;
+   }
+
+   .countryName > p {
+      font-size: 10px;
+   }
+
+   .nav {
+      justify-content: center;
+   }
+   
+   .nav > a {
+      padding: 8px;
+   }
+
+   .winners p {
+      font-size: 11px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+   .track {
+      width: 24.400em;
+      height: 3.400em;
+      transform: skew(-5deg);
+   }
+
+   .calendar-button {
+      width: 100%;
+   }
+
+   .calendar-button:hover {
+      transform: scale(1);
+   }
+   
+   .calendar-button:active {
+      transform: scale(1);
+   }
+
+   h2{
+      font-size: 13px;
+   }
+
+   .titulo h1 {
+      font-size: 50px;
+   }
+
+   .track > h2 {
+      font-size: 10px;
+   }
+
+   .countryName > p {
+      font-size: 10px;
+   }
+
+   .nav {
+      justify-content: center;
+   }
+   
+   .nav > a {
+      padding: 8px;
+   }
+
+   .winners p {
+      font-size: 12px;
+   }
+}
+
+/* @media only screen and (max-width: 480px) {
    .track {
       width: 24.400em;
       height: 3.400em;
@@ -353,4 +433,4 @@ img {
    .winners p {
       font-size: 12px;
    }
-}
+} */
