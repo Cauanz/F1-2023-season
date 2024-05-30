@@ -2,6 +2,7 @@
    font-family: F1;
    src: url(../Fonts/Formula1-Bold.otf) format('opentype');
 }
+
 * {
    margin: 0;
    padding: 0;
@@ -13,11 +14,12 @@
 body {
    /* background: url(images/vettel.jpeg) center center no-repeat fixed; */
    background: #b4b4b4e8 !important;
+   height: 100vh;
 }
 
 .containerdiv {
    display: flex;
-   width: 100vw;
+   width: 100%;
    max-width: 100%;
    flex-wrap: wrap;
    align-items: center;
@@ -26,7 +28,7 @@ body {
 }
 
 .titulo {
-   width: 100vw;
+   width: 100%;
    max-width: 100%;
 }
 
@@ -36,7 +38,6 @@ body {
    font-size: 70px;
    color: #FF1801;
    text-transform: uppercase;
-   margin: 0;
 }
 
 .navy {
@@ -67,10 +68,11 @@ body {
    display: flex;
    justify-content: center;
    background: #FF1801;
-   width: 100vw;
+   width: 100%;
    max-width: 100%;
    margin-bottom: 5px;
    padding: 8px;
+   flex-wrap: wrap;
 }
 
 .pagnav a {
@@ -86,11 +88,13 @@ body {
 
 .pagnav ul li {
    list-style: none;
-   display: inline-block;
+   display: flex;
+   margin: 2px;
 }
 
 .pagnav ul{
-   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .pagnav a:hover {
